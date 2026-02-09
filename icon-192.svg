@@ -1,37 +1,20 @@
-<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gradient192" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e056fd;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#b820e8;stop-opacity:1" />
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5164bb;stop-opacity:1" />
     </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
   </defs>
-  <!-- Background circle -->
-  <circle cx="96" cy="96" r="96" fill="url(#gradient192)"/>
-
-  <!-- Inner circle -->
-  <circle cx="96" cy="96" r="88" fill="#0f0f23"/>
-
-  <!-- Letter blocks -->
-  <rect x="40" y="50" width="30" height="30" rx="6" fill="#e056fd" opacity="0.8"/>
-  <text x="55" y="72" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">W</text>
-
-  <rect x="81" y="50" width="30" height="30" rx="6" fill="#d441e8" opacity="0.8"/>
-  <text x="96" y="72" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">O</text>
-
-  <rect x="122" y="50" width="30" height="30" rx="6" fill="#c82ce3" opacity="0.8"/>
-  <text x="137" y="72" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">R</text>
-
-  <rect x="40" y="95" width="30" height="30" rx="6" fill="#b820e8" opacity="0.8"/>
-  <text x="55" y="117" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">D</text>
-
-  <rect x="81" y="95" width="30" height="30" rx="6" fill="#a61ad3" opacity="0.8"/>
-  <text x="96" y="117" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">S</text>
-
-  <rect x="122" y="95" width="30" height="30" rx="6" fill="#9414be" opacity="0.8"/>
-  <text x="137" y="117" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">C</text>
-
-  <!-- Decorative element -->
-  <circle cx="96" cy="160" r="8" fill="#e056fd" opacity="0.6"/>
-  <circle cx="75" cy="150" r="5" fill="#d441e8" opacity="0.4"/>
-  <circle cx="117" cy="150" r="5" fill="#c82ce3" opacity="0.4"/>
+  <rect width="512" height="512" fill="url(#grad1)"/>
+  <g transform="translate(256, 256)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    <text x="0" y="0" font-size="180" text-anchor="middle" dominant-baseline="central" fill="white" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" opacity="0.95">🔤</text>
+  </g>
+  <g transform="translate(256, 256)">
+    <circle cx="0" cy="0" r="220" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  </g>
 </svg>
