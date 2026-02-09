@@ -1,0 +1,39 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e056fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b820e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#gradient512)"/>
+
+  <!-- Inner circle -->
+  <circle cx="256" cy="256" r="235" fill="#0f0f23"/>
+
+  <!-- Letter blocks grid -->
+  <!-- Row 1 -->
+  <rect x="95" y="110" width="70" height="70" rx="14" fill="#e056fd" opacity="0.8"/>
+  <text x="130" y="165" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">W</text>
+
+  <rect x="221" y="110" width="70" height="70" rx="14" fill="#d441e8" opacity="0.8"/>
+  <text x="256" y="165" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">O</text>
+
+  <rect x="347" y="110" width="70" height="70" rx="14" fill="#c82ce3" opacity="0.8"/>
+  <text x="382" y="165" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">R</text>
+
+  <!-- Row 2 -->
+  <rect x="95" y="236" width="70" height="70" rx="14" fill="#b820e8" opacity="0.8"/>
+  <text x="130" y="291" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">D</text>
+
+  <rect x="221" y="236" width="70" height="70" rx="14" fill="#a61ad3" opacity="0.8"/>
+  <text x="256" y="291" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">S</text>
+
+  <rect x="347" y="236" width="70" height="70" rx="14" fill="#9414be" opacity="0.8"/>
+  <text x="382" y="291" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">C</text>
+
+  <!-- Decorative elements -->
+  <circle cx="256" cy="410" r="18" fill="#e056fd" opacity="0.6"/>
+  <circle cx="180" cy="380" r="12" fill="#d441e8" opacity="0.4"/>
+  <circle cx="332" cy="380" r="12" fill="#c82ce3" opacity="0.4"/>
+</svg>

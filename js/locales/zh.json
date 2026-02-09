@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "加载中..."
+  },
+  "header": {
+    "title": "单词拼字游戏 - 单词益智游戏",
+    "name": "单词拼字",
+    "subtitle": "将打乱的字母排列成正确的顺序！"
+  },
+  "intro": {
+    "title": "单词拼字游戏",
+    "description": "揭开字母谜团，形成正确的单词！",
+    "selectDifficulty": "选择难度",
+    "easy": "简单 (4个字母)",
+    "medium": "中等 (5-6个字母)",
+    "hard": "困难 (7+个字母)",
+    "mixed": "混合",
+    "howToPlay": "如何玩",
+    "step1": "点击打乱的字母，将其排列成正确的顺序",
+    "step2": "每个单词有30秒的时间限制",
+    "step3": "答对可获得积分（剩余时间×单词长度×连击）",
+    "step4": "游戏开始时有3条生命，每次答错会失去一条生命",
+    "step5": "连续正确答题可获得连击奖励以赚取额外积分",
+    "hints": "提示系统",
+    "hintFirstLetter": "显示首字母",
+    "hintCategory": "显示类别",
+    "startButton": "🎬 开始游戏"
+  },
+  "game": {
+    "level": "关卡",
+    "score": "分数",
+    "combo": "连击",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "跳过",
+    "submit": "提交",
+    "back": "DopaBrain 主页"
+  },
+  "results": {
+    "levelComplete": "关卡完成！",
+    "totalScore": "最终分数",
+    "wordsCorrect": "正确个数",
+    "bestCombo": "最高连击",
+    "shareButton": "📤 分享结果",
+    "continueButton": "继续游戏",
+    "homeButton": "返回主页"
+  },
+  "gameover": {
+    "title": "游戏结束",
+    "retryButton": "🔄 重试",
+    "homeButton": "返回主页"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI游戏分析",
+    "modalTitle": "AI游戏分析",
+    "closeButton": "关闭",
+    "reactionType": "游戏类型",
+    "personalityTraits": "特征",
+    "suitableCareers": "推荐职业",
+    "improvement": "改进建议",
+    "dataAnalysis": "数据分析",
+    "averageTime": "平均时间",
+    "variance": "方差",
+    "consistency": "一致性",
+    "veryConsistent": "非常一致",
+    "consistent": "一致",
+    "somewhat": "有所一致",
+    "inconsistent": "不一致",
+    "improvementSuggestion": "获得充足的睡眠，定期练习，学习新单词以改进您的拼字技能。"
+  },
+  "recommendations": {
+    "title": "也试试这些",
+    "quizApp": "知识竞答",
+    "quizDesc": "100道常识题！",
+    "reactionTest": "反应速度测试",
+    "reactionDesc": "测试你的反应！",
+    "colorMemory": "色彩记忆",
+    "memoryDesc": "记住颜色！",
+    "dreamFortune": "梦境与运势",
+    "dreamDesc": "今日运势！",
+    "mbtiLove": "MBTI配对",
+    "mbtiDesc": "我们合适吗？",
+    "emotionTemp": "情绪温度计",
+    "emotionDesc": "你的情绪如何？",
+    "dday": "倒数计数器",
+    "ddayDesc": "计算剩余天数！",
+    "lottery": "彩票生成器",
+    "lotteryDesc": "你的幸运数字！",
+    "whiteNoise": "白噪音",
+    "whiteNoiseDesc": "睡眠播放列表！"
+  },
+  "ads": {
+    "banner": "广告区域",
+    "interstitial": "广告",
+    "closeButton": "关闭"
+  }
+}

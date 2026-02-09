@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "Chargement..."
+  },
+  "header": {
+    "title": "Word Scramble - Jeu de Puzzle de Mots",
+    "name": "Word Scramble",
+    "subtitle": "Réorganisez les lettres mélangées dans le bon ordre!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "Démêlez les lettres mélangées pour former des mots corrects!",
+    "selectDifficulty": "Sélectionnez la difficulté",
+    "easy": "Facile (4 lettres)",
+    "medium": "Moyen (5-6 lettres)",
+    "hard": "Difficile (7+ lettres)",
+    "mixed": "Mélangé",
+    "howToPlay": "Comment jouer",
+    "step1": "Appuyez sur les lettres mélangées pour les réorganiser dans le bon ordre",
+    "step2": "Vous avez 30 secondes par mot",
+    "step3": "Gagnez des points pour les bonnes réponses (temps restant × longueur du mot × combo)",
+    "step4": "Commencez avec 3 vies. Perdez une vie pour chaque mauvaise réponse",
+    "step5": "Créez des combos pour les bonnes réponses consécutives et gagnez des points bonus",
+    "hints": "Système d'indices",
+    "hintFirstLetter": "Afficher la première lettre",
+    "hintCategory": "Afficher la catégorie",
+    "startButton": "🎬 Commencer le jeu"
+  },
+  "game": {
+    "level": "Niveau",
+    "score": "Score",
+    "combo": "Combo",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "Passer",
+    "submit": "Envoyer",
+    "back": "Accueil DopaBrain"
+  },
+  "results": {
+    "levelComplete": "Niveau terminé!",
+    "totalScore": "Score final",
+    "wordsCorrect": "Mots corrects",
+    "bestCombo": "Meilleur combo",
+    "shareButton": "📤 Partager les résultats",
+    "continueButton": "Continuer à jouer",
+    "homeButton": "Aller à l'accueil"
+  },
+  "gameover": {
+    "title": "Fin du jeu",
+    "retryButton": "🔄 Réessayer",
+    "homeButton": "Aller à l'accueil"
+  },
+  "premium": {
+    "analysisButton": "🧠 Analyse IA",
+    "modalTitle": "Analyse IA",
+    "closeButton": "Fermer",
+    "reactionType": "Type de jeu",
+    "personalityTraits": "Caractéristiques",
+    "suitableCareers": "Carrières recommandées",
+    "improvement": "Conseils d'amélioration",
+    "dataAnalysis": "Analyse des données",
+    "averageTime": "Temps moyen",
+    "variance": "Variance",
+    "consistency": "Cohérence",
+    "veryConsistent": "Très cohérent",
+    "consistent": "Cohérent",
+    "somewhat": "Plutôt cohérent",
+    "inconsistent": "Incohérent",
+    "improvementSuggestion": "Dormez suffisamment, pratiquez régulièrement et apprenez de nouveaux mots pour améliorer vos compétences de démêlage de mots."
+  },
+  "recommendations": {
+    "title": "Essayez aussi",
+    "quizApp": "Quiz de connaissances",
+    "quizDesc": "100 questions de trivia!",
+    "reactionTest": "Test de temps de réaction",
+    "reactionDesc": "Testez vos réflexes!",
+    "colorMemory": "Mémoire des couleurs",
+    "memoryDesc": "Mémorisez les couleurs!",
+    "dreamFortune": "Rêves et chance",
+    "dreamDesc": "La chance d'aujourd'hui!",
+    "mbtiLove": "Compatibilité MBTI",
+    "mbtiDesc": "Sommes-nous compatibles?",
+    "emotionTemp": "Thermomètre émotionnel",
+    "emotionDesc": "Quel est votre humeur?",
+    "dday": "Compteur à rebours",
+    "ddayDesc": "Calculez les jours restants!",
+    "lottery": "Générateur de loterie",
+    "lotteryDesc": "Vos numéros de chance!",
+    "whiteNoise": "Bruit blanc",
+    "whiteNoiseDesc": "Liste de lecture pour dormir!"
+  },
+  "ads": {
+    "banner": "Espace publicitaire",
+    "interstitial": "Publicité",
+    "closeButton": "Fermer"
+  }
+}

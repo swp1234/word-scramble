@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "Wird geladen..."
+  },
+  "header": {
+    "title": "Word Scramble - Wort-Puzzle-Spiel",
+    "name": "Word Scramble",
+    "subtitle": "Ordnen Sie die durcheinander geratenen Buchstaben in der richtigen Reihenfolge!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "Sortieren Sie die vermischten Buchstaben, um korrekte Wörter zu bilden!",
+    "selectDifficulty": "Schwierigkeitsgrad wählen",
+    "easy": "Leicht (4 Buchstaben)",
+    "medium": "Mittel (5-6 Buchstaben)",
+    "hard": "Schwer (7+ Buchstaben)",
+    "mixed": "Gemischt",
+    "howToPlay": "Spielanleitung",
+    "step1": "Tippen Sie auf die durcheinander geratenen Buchstaben, um sie in der richtigen Reihenfolge anzuordnen",
+    "step2": "Sie haben 30 Sekunden pro Wort",
+    "step3": "Verdienen Sie Punkte für richtige Antworten (verbleibende Zeit × Wortlänge × Combo)",
+    "step4": "Beginnen Sie mit 3 Leben. Verlieren Sie ein Leben für jede falsche Antwort",
+    "step5": "Erstellen Sie Kombinationen für aufeinanderfolgende richtige Antworten und verdienen Sie Bonuspunkte",
+    "hints": "Hinweissystem",
+    "hintFirstLetter": "Ersten Buchstaben anzeigen",
+    "hintCategory": "Kategorie anzeigen",
+    "startButton": "🎬 Spiel starten"
+  },
+  "game": {
+    "level": "Stufe",
+    "score": "Punktzahl",
+    "combo": "Combo",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "Überspringen",
+    "submit": "Absenden",
+    "back": "DopaBrain Startseite"
+  },
+  "results": {
+    "levelComplete": "Stufe abgeschlossen!",
+    "totalScore": "Endsumme",
+    "wordsCorrect": "Richtige Wörter",
+    "bestCombo": "Beste Combo",
+    "shareButton": "📤 Ergebnisse teilen",
+    "continueButton": "Weiterspielen",
+    "homeButton": "Zur Startseite"
+  },
+  "gameover": {
+    "title": "Spielende",
+    "retryButton": "🔄 Erneut versuchen",
+    "homeButton": "Zur Startseite"
+  },
+  "premium": {
+    "analysisButton": "🧠 KI-Spielanalyse",
+    "modalTitle": "KI-Spielanalyse",
+    "closeButton": "Schließen",
+    "reactionType": "Spieltyp",
+    "personalityTraits": "Merkmale",
+    "suitableCareers": "Empfohlene Karrieren",
+    "improvement": "Verbesserungstipps",
+    "dataAnalysis": "Datenanalyse",
+    "averageTime": "Durchschnittliche Zeit",
+    "variance": "Abweichung",
+    "consistency": "Konsistenz",
+    "veryConsistent": "Sehr konsistent",
+    "consistent": "Konsistent",
+    "somewhat": "Etwas konsistent",
+    "inconsistent": "Inkonsistent",
+    "improvementSuggestion": "Schlafen Sie ausreichend, üben Sie regelmäßig und lernen Sie neue Wörter, um Ihre Fähigkeiten zum Auflösen von Wörtern zu verbessern."
+  },
+  "recommendations": {
+    "title": "Versuchen Sie auch diese",
+    "quizApp": "Wissensfrage",
+    "quizDesc": "100 Trivia-Fragen!",
+    "reactionTest": "Reaktionszeit-Test",
+    "reactionDesc": "Testen Sie Ihre Reflexe!",
+    "colorMemory": "Farbgedächtnis",
+    "memoryDesc": "Merken Sie sich die Farben!",
+    "dreamFortune": "Traum und Glück",
+    "dreamDesc": "Das Glück von heute!",
+    "mbtiLove": "MBTI-Kompatibilität",
+    "mbtiDesc": "Sind wir kompatibel?",
+    "emotionTemp": "Emotionsthermometer",
+    "emotionDesc": "Wie ist deine Stimmung?",
+    "dday": "Countdown-Zähler",
+    "ddayDesc": "Berechnen Sie die verbleibenden Tage!",
+    "lottery": "Lotteriegenerator",
+    "lotteryDesc": "Ihre Glückszahlen!",
+    "whiteNoise": "Weißes Rauschen",
+    "whiteNoiseDesc": "Schlafwiedergabeliste!"
+  },
+  "ads": {
+    "banner": "Werbefläche",
+    "interstitial": "Werbung",
+    "closeButton": "Schließen"
+  }
+}

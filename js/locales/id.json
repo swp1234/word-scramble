@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "Memuat..."
+  },
+  "header": {
+    "title": "Word Scramble - Permainan Teka-Teki Kata",
+    "name": "Word Scramble",
+    "subtitle": "Susunlah huruf-huruf yang kacau dalam urutan yang benar!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "Bongkar huruf-huruf yang diacak untuk membentuk kata yang benar!",
+    "selectDifficulty": "Pilih tingkat kesulitan",
+    "easy": "Mudah (4 huruf)",
+    "medium": "Sedang (5-6 huruf)",
+    "hard": "Sulit (7+ huruf)",
+    "mixed": "Campuran",
+    "howToPlay": "Cara bermain",
+    "step1": "Ketuk huruf-huruf yang diacak untuk menyusunnya dengan benar",
+    "step2": "Anda memiliki 30 detik per kata",
+    "step3": "Dapatkan poin untuk jawaban yang benar (waktu sisa × panjang kata × kombo)",
+    "step4": "Mulai dengan 3 nyawa. Kehilangan satu nyawa untuk setiap jawaban yang salah",
+    "step5": "Buat kombo untuk jawaban benar berturut-turut dan dapatkan poin bonus",
+    "hints": "Sistem petunjuk",
+    "hintFirstLetter": "Tampilkan huruf pertama",
+    "hintCategory": "Tampilkan kategori",
+    "startButton": "🎬 Mulai bermain"
+  },
+  "game": {
+    "level": "Level",
+    "score": "Skor",
+    "combo": "Kombo",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "Lewati",
+    "submit": "Kirim",
+    "back": "Beranda DopaBrain"
+  },
+  "results": {
+    "levelComplete": "Level selesai!",
+    "totalScore": "Skor akhir",
+    "wordsCorrect": "Kata benar",
+    "bestCombo": "Kombo terbaik",
+    "shareButton": "📤 Bagikan hasil",
+    "continueButton": "Lanjut bermain",
+    "homeButton": "Ke beranda"
+  },
+  "gameover": {
+    "title": "Game over",
+    "retryButton": "🔄 Coba lagi",
+    "homeButton": "Ke beranda"
+  },
+  "premium": {
+    "analysisButton": "🧠 Analisis AI",
+    "modalTitle": "Analisis AI",
+    "closeButton": "Tutup",
+    "reactionType": "Tipe permainan",
+    "personalityTraits": "Karakteristik",
+    "suitableCareers": "Karir yang disarankan",
+    "improvement": "Tips peningkatan",
+    "dataAnalysis": "Analisis data",
+    "averageTime": "Waktu rata-rata",
+    "variance": "Varians",
+    "consistency": "Konsistensi",
+    "veryConsistent": "Sangat konsisten",
+    "consistent": "Konsisten",
+    "somewhat": "Cukup konsisten",
+    "inconsistent": "Tidak konsisten",
+    "improvementSuggestion": "Tidur yang cukup, berlatih secara teratur, dan pelajari kata-kata baru untuk meningkatkan keterampilan membongkar kata Anda."
+  },
+  "recommendations": {
+    "title": "Coba ini juga",
+    "quizApp": "Kuis pengetahuan",
+    "quizDesc": "100 pertanyaan trivia!",
+    "reactionTest": "Tes waktu reaksi",
+    "reactionDesc": "Uji refleks Anda!",
+    "colorMemory": "Memori warna",
+    "memoryDesc": "Ingat warna-warnanya!",
+    "dreamFortune": "Mimpi dan keberuntungan",
+    "dreamDesc": "Keberuntungan hari ini!",
+    "mbtiLove": "Kompatibilitas MBTI",
+    "mbtiDesc": "Apakah kita cocok?",
+    "emotionTemp": "Termometer emosi",
+    "emotionDesc": "Bagaimana suasana hati Anda?",
+    "dday": "Penghitung mundur",
+    "ddayDesc": "Hitung hari yang tersisa!",
+    "lottery": "Pembuat lotere",
+    "lotteryDesc": "Angka keberuntungan Anda!",
+    "whiteNoise": "Kebisingan putih",
+    "whiteNoiseDesc": "Daftar putar tidur!"
+  },
+  "ads": {
+    "banner": "Ruang iklan",
+    "interstitial": "Iklan",
+    "closeButton": "Tutup"
+  }
+}

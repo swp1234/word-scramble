@@ -1,0 +1,39 @@
+{
+  "name": "Word Scramble - 단어 퍼즐 게임",
+  "short_name": "Word Scramble",
+  "description": "뒤섞인 알파벳을 올바른 순서로 배치하는 단어 퍼즐 게임. 난이도별 도전, 점수 경쟁, 무한 플레이 가능!",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#e056fd",
+  "orientation": "portrait",
+  "lang": "ko",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"]
+}

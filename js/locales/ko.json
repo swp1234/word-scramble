@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "로딩 중..."
+  },
+  "header": {
+    "title": "Word Scramble 단어 퍼즐 게임",
+    "name": "Word Scramble",
+    "subtitle": "뒤섞인 알파벳을 맞는 순서로 배치하세요!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "뒤섞인 알파벳 순서를 맞춰보세요!",
+    "selectDifficulty": "난이도 선택",
+    "easy": "쉬움 (4글자)",
+    "medium": "보통 (5-6글자)",
+    "hard": "어려움 (7+글자)",
+    "mixed": "모두 섞기",
+    "howToPlay": "게임 방법",
+    "step1": "뒤섞인 알파벳을 탭해서 올바른 순서로 배치하세요",
+    "step2": "단어당 30초의 시간이 주어집니다",
+    "step3": "정답 시 점수를 얻으세요 (남은 시간 × 단어길이 × 콤보)",
+    "step4": "3개의 라이프로 시작하며, 오답 시 라이프가 감소합니다",
+    "step5": "연속 정답 시 콤보 보너스를 얻을 수 있습니다",
+    "hints": "힌트 시스템",
+    "hintFirstLetter": "첫 글자 공개",
+    "hintCategory": "카테고리 표시",
+    "startButton": "🎬 게임 시작하기"
+  },
+  "game": {
+    "level": "레벨",
+    "score": "점수",
+    "combo": "콤보",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "건너뛰기",
+    "submit": "제출",
+    "back": "DopaBrain 홈"
+  },
+  "results": {
+    "levelComplete": "레벨 완료!",
+    "totalScore": "최종 점수",
+    "wordsCorrect": "정답 개수",
+    "bestCombo": "최대 콤보",
+    "shareButton": "📤 결과 공유하기",
+    "continueButton": "계속 플레이",
+    "homeButton": "홈으로"
+  },
+  "gameover": {
+    "title": "게임 오버",
+    "retryButton": "🔄 다시 도전",
+    "homeButton": "홈으로"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI 게임 분석",
+    "modalTitle": "AI 게임 분석",
+    "closeButton": "닫기",
+    "reactionType": "게임 타입",
+    "personalityTraits": "특징",
+    "suitableCareers": "추천 직업",
+    "improvement": "개선 제안",
+    "dataAnalysis": "데이터 분석",
+    "averageTime": "평균 시간",
+    "variance": "편차",
+    "consistency": "일관성",
+    "veryConsistent": "매우 일관성 있음",
+    "consistent": "일관성 있음",
+    "somewhat": "보통",
+    "inconsistent": "불일관성",
+    "improvementSuggestion": "충분한 수면, 휴식, 명상을 통해 집중력을 높이고 더 많은 단어 학습을 통해 어휘력을 향상시킬 수 있습니다."
+  },
+  "recommendations": {
+    "title": "이것도 해보세요",
+    "quizApp": "지식 퀴즈",
+    "quizDesc": "상식 100문제!",
+    "reactionTest": "반응속도 테스트",
+    "reactionDesc": "신경 반응 측정!",
+    "colorMemory": "색상 기억력",
+    "memoryDesc": "색상 패턴 기억!",
+    "dreamFortune": "꿈해몽/운세",
+    "dreamDesc": "오늘의 운세!",
+    "mbtiLove": "MBTI 궁합",
+    "mbtiDesc": "우리는 잘 맞을까?",
+    "emotionTemp": "감정 온도계",
+    "emotionDesc": "내 감정은?",
+    "dday": "D-Day 카운터",
+    "ddayDesc": "남은 날짜 계산!",
+    "lottery": "로또 번호 생성기",
+    "lotteryDesc": "당신의 번호!",
+    "whiteNoise": "화이트 노이즈",
+    "whiteNoiseDesc": "숙면 플레이리스트!"
+  },
+  "ads": {
+    "banner": "광고 영역",
+    "interstitial": "광고",
+    "closeButton": "닫기"
+  }
+}

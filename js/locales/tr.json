@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "Yükleniyor..."
+  },
+  "header": {
+    "title": "Word Scramble - Kelime Bulmaca Oyunu",
+    "name": "Word Scramble",
+    "subtitle": "Karışık harfleri doğru sırayla düzenleyin!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "Karışık harfleri doğru kelimeleri oluşturacak şekilde yeniden düzenleyin!",
+    "selectDifficulty": "Zorluk seviyesini seçin",
+    "easy": "Kolay (4 harf)",
+    "medium": "Orta (5-6 harf)",
+    "hard": "Zor (7+ harf)",
+    "mixed": "Karışık",
+    "howToPlay": "Nasıl oynanır",
+    "step1": "Karışık harfleri dokunarak doğru sırada düzenleyin",
+    "step2": "Her kelime için 30 saniye zaman var",
+    "step3": "Doğru cevaplar için puan kazanın (kalan zaman × kelime uzunluğu × kombo)",
+    "step4": "3 can ile başlayın. Yanlış cevap için bir can kaybettiniz",
+    "step5": "Ardışık doğru cevaplar için kombo oluşturun ve bonus puan kazanın",
+    "hints": "İpucu sistemi",
+    "hintFirstLetter": "İlk harfi göster",
+    "hintCategory": "Kategoriyi göster",
+    "startButton": "🎬 Oyunu başlat"
+  },
+  "game": {
+    "level": "Seviye",
+    "score": "Puan",
+    "combo": "Kombo",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "Atla",
+    "submit": "Gönder",
+    "back": "DopaBrain Anasayfa"
+  },
+  "results": {
+    "levelComplete": "Seviye tamamlandı!",
+    "totalScore": "Son puan",
+    "wordsCorrect": "Doğru kelimeler",
+    "bestCombo": "En iyi kombo",
+    "shareButton": "📤 Sonuçları paylaş",
+    "continueButton": "Oynamaya devam et",
+    "homeButton": "Eve git"
+  },
+  "gameover": {
+    "title": "Oyun bitti",
+    "retryButton": "🔄 Tekrar dene",
+    "homeButton": "Eve git"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI oyun analizi",
+    "modalTitle": "AI oyun analizi",
+    "closeButton": "Kapat",
+    "reactionType": "Oyun türü",
+    "personalityTraits": "Özellikler",
+    "suitableCareers": "Önerilen meslekler",
+    "improvement": "İyileştirme ipuçları",
+    "dataAnalysis": "Veri analizi",
+    "averageTime": "Ortalama zaman",
+    "variance": "Varyans",
+    "consistency": "Tutarlılık",
+    "veryConsistent": "Çok tutarlı",
+    "consistent": "Tutarlı",
+    "somewhat": "Biraz tutarlı",
+    "inconsistent": "Tutarsız",
+    "improvementSuggestion": "Yeterli uyku alın, düzenli olarak pratik yapın ve kelime bulmaca becerilerinizi geliştirmek için yeni kelimeler öğrenin."
+  },
+  "recommendations": {
+    "title": "Bunları da deneyin",
+    "quizApp": "Bilgi yarışması",
+    "quizDesc": "100 trivia sorusu!",
+    "reactionTest": "Tepki zamanı testi",
+    "reactionDesc": "Reflekslerinizi test edin!",
+    "colorMemory": "Renk hafızası",
+    "memoryDesc": "Renkleri hatırla!",
+    "dreamFortune": "Rüya ve şans",
+    "dreamDesc": "Bugünün şansı!",
+    "mbtiLove": "MBTI uyumluluğu",
+    "mbtiDesc": "Uyumlu muyuz?",
+    "emotionTemp": "Duygu sıcaklığı",
+    "emotionDesc": "Ruh halin nasıl?",
+    "dday": "Geri sayım saati",
+    "ddayDesc": "Kalan günleri hesapla!",
+    "lottery": "Piyango üreteci",
+    "lotteryDesc": "Şanslı numaralarınız!",
+    "whiteNoise": "Beyaz gürültü",
+    "whiteNoiseDesc": "Uyku çalma listesi!"
+  },
+  "ads": {
+    "banner": "Reklam alanı",
+    "interstitial": "Reklam",
+    "closeButton": "Kapat"
+  }
+}

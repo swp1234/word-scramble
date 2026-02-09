@@ -1,0 +1,98 @@
+{
+  "app": {
+    "loading": "Loading..."
+  },
+  "header": {
+    "title": "Word Scramble - Word Puzzle Game",
+    "name": "Word Scramble",
+    "subtitle": "Arrange the scrambled letters in the correct order!"
+  },
+  "intro": {
+    "title": "Word Scramble",
+    "description": "Unscramble the letters to form correct words!",
+    "selectDifficulty": "Select Difficulty",
+    "easy": "Easy (4 letters)",
+    "medium": "Medium (5-6 letters)",
+    "hard": "Hard (7+ letters)",
+    "mixed": "Mixed",
+    "howToPlay": "How to Play",
+    "step1": "Tap the scrambled letters to arrange them in the correct order",
+    "step2": "You have 30 seconds per word",
+    "step3": "Earn points for correct answers (remaining time × word length × combo)",
+    "step4": "Start with 3 lives. Lose a life for each wrong answer",
+    "step5": "Build combos for consecutive correct answers to earn bonus points",
+    "hints": "Hint System",
+    "hintFirstLetter": "Reveal First Letter",
+    "hintCategory": "Show Category",
+    "startButton": "🎬 Start Game"
+  },
+  "game": {
+    "level": "Level",
+    "score": "Score",
+    "combo": "Combo",
+    "hintFirstLetter": "💡",
+    "hintCategory": "🏷️",
+    "clear": "🔄",
+    "skip": "Skip",
+    "submit": "Submit",
+    "back": "DopaBrain Home"
+  },
+  "results": {
+    "levelComplete": "Level Complete!",
+    "totalScore": "Final Score",
+    "wordsCorrect": "Words Correct",
+    "bestCombo": "Best Combo",
+    "shareButton": "📤 Share Results",
+    "continueButton": "Keep Playing",
+    "homeButton": "Go Home"
+  },
+  "gameover": {
+    "title": "Game Over",
+    "retryButton": "🔄 Try Again",
+    "homeButton": "Go Home"
+  },
+  "premium": {
+    "analysisButton": "🧠 AI Game Analysis",
+    "modalTitle": "AI Game Analysis",
+    "closeButton": "Close",
+    "reactionType": "Game Type",
+    "personalityTraits": "Traits",
+    "suitableCareers": "Recommended Careers",
+    "improvement": "Improvement Tips",
+    "dataAnalysis": "Data Analysis",
+    "averageTime": "Average Time",
+    "variance": "Variance",
+    "consistency": "Consistency",
+    "veryConsistent": "Very Consistent",
+    "consistent": "Consistent",
+    "somewhat": "Somewhat",
+    "inconsistent": "Inconsistent",
+    "improvementSuggestion": "Get adequate sleep, practice regularly, and learn new vocabulary words to improve your word unscrambling skills."
+  },
+  "recommendations": {
+    "title": "Try These Too",
+    "quizApp": "Knowledge Quiz",
+    "quizDesc": "100 trivia questions!",
+    "reactionTest": "Reaction Time Test",
+    "reactionDesc": "Test your reflexes!",
+    "colorMemory": "Color Memory",
+    "memoryDesc": "Remember the colors!",
+    "dreamFortune": "Dream & Fortune",
+    "dreamDesc": "Today's fortune!",
+    "mbtiLove": "MBTI Compatibility",
+    "mbtiDesc": "Are we compatible?",
+    "emotionTemp": "Emotion Temperature",
+    "emotionDesc": "What's your mood?",
+    "dday": "D-Day Counter",
+    "ddayDesc": "Calculate remaining days!",
+    "lottery": "Lottery Generator",
+    "lotteryDesc": "Your lucky numbers!",
+    "whiteNoise": "White Noise",
+    "whiteNoiseDesc": "Sleep playlist!"
+  },
+  "ads": {
+    "banner": "Advertisement Space",
+    "interstitial": "Advertisement",
+    "closeButton": "Close"
+  }
+}
