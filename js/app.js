@@ -513,11 +513,18 @@ async function initApp() {
     const loader = document.getElementById('app-loader');
 
     // Initialize i18n
-    await i18n.init();
+    try {
+        await i18n.init();
+    } catch (e) {
+        console.warn('i18n init failed:', e);
+    }
 
     // Hide loader after 500ms
     setTimeout(() => {
-        loader.classList.add('hidden');
+        if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 300);
+        }
     }, 500);
 
     // Initialize game
