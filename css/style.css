@@ -1297,3 +1297,198 @@ select:focus-visible {
     background: #e056fd;
     color: white;
 }
+
+/* ============================================
+   Light Mode Theme
+   ============================================ */
+[data-theme="light"] {
+    --bg-dark: #f5f5fa;
+    --bg-darker: #ffffff;
+    --surface: #ffffff;
+    --surface-light: #f5f5f5;
+    --text-primary: #1a1a2e;
+    --text-secondary: #5a5a70;
+}
+
+[data-theme="light"] body {
+    background: linear-gradient(135deg, #f5f5fa 0%, #ffffff 100%);
+}
+
+[data-theme="light"] .app-loader {
+    background: linear-gradient(135deg, #f5f5fa 0%, #ffffff 100%);
+}
+
+[data-theme="light"] .ad-banner {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .lang-menu {
+    background: var(--surface);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .lang-option {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .lang-option:hover {
+    background: rgba(224, 86, 253, 0.1);
+    color: var(--primary-color);
+}
+
+[data-theme="light"] .app-header {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(224, 86, 253, 0.1);
+}
+
+[data-theme="light"] .difficulty-select {
+    background: rgba(224, 86, 253, 0.05);
+    border-color: rgba(224, 86, 253, 0.15);
+}
+
+[data-theme="light"] .difficulty-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .difficulty-btn:hover {
+    background: rgba(224, 86, 253, 0.15);
+    border-color: var(--primary-color);
+}
+
+[data-theme="light"] .how-to-play,
+[data-theme="light"] .hint-guide {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .game-info-bar {
+    background: rgba(224, 86, 253, 0.05);
+    border-bottom-color: rgba(224, 86, 253, 0.1);
+}
+
+[data-theme="light"] .category-badge {
+    background: rgba(224, 86, 253, 0.15);
+    color: var(--primary-dark);
+}
+
+[data-theme="light"] .scrambled-word {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .hint-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .hint-btn:hover:not(:disabled) {
+    background: rgba(224, 86, 253, 0.15);
+    border-color: var(--primary-color);
+}
+
+[data-theme="light"] .answer-area {
+    background: rgba(224, 86, 253, 0.05);
+    border-color: rgba(224, 86, 253, 0.2);
+}
+
+[data-theme="light"] .btn-secondary {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .result-card,
+[data-theme="light"] .gameover-stats {
+    background: rgba(224, 86, 253, 0.05);
+    border-color: rgba(224, 86, 253, 0.15);
+}
+
+[data-theme="light"] .result-stat {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .stat-box {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .premium-section {
+    background: linear-gradient(135deg, rgba(224, 86, 253, 0.1) 0%, rgba(247, 141, 255, 0.05) 100%);
+    border-color: rgba(224, 86, 253, 0.2);
+}
+
+[data-theme="light"] .ad-result-area,
+[data-theme="light"] .ad-gameover-area {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .modal-content {
+    background: var(--surface);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .recommendations-section {
+    background: rgba(224, 86, 253, 0.05);
+    border-top-color: rgba(224, 86, 253, 0.1);
+    border-bottom-color: rgba(224, 86, 253, 0.1);
+}
+
+[data-theme="light"] .rec-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .rec-card:hover {
+    background: rgba(224, 86, 253, 0.1);
+    border-color: var(--primary-color);
+}
+
+[data-theme="light"] .game-footer {
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 12px;
+    right: 56px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-theme="light"] .theme-toggle {
+    background: rgba(26, 26, 46, 0.1);
+    border-color: rgba(26, 26, 46, 0.15);
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    background: rgba(26, 26, 46, 0.15);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
