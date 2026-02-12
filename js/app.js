@@ -127,6 +127,60 @@ class WordScrambleGame {
                 this.langMenu.classList.add('hidden');
             }
         });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => this.handleKeyDown(e));
+    }
+
+    handleKeyDown(e) {
+        // Don't intercept when modal or lang menu is open
+        if (!this.premiumModal.classList.contains('hidden')) return;
+
+        // Enter to submit answer (during gameplay)
+        if (e.key === 'Enter' && this.gameActive) {
+            e.preventDefault();
+            if (this.selectedLetters.length > 0) {
+                this.submitAnswer();
+            }
+            return;
+        }
+
+        // Escape or Backspace to clear answer (during gameplay)
+        if ((e.key === 'Escape' || e.key === 'Backspace') && this.gameActive) {
+            e.preventDefault();
+            if (e.key === 'Backspace' && this.selectedLetters.length > 0) {
+                // Remove last letter
+                this.removeLetter(this.selectedLetters.length - 1);
+            } else if (e.key === 'Escape') {
+                this.clearAnswer();
+            }
+            return;
+        }
+
+        // Number keys 1-9 to select letter buttons by index (during gameplay)
+        if (this.gameActive && /^[1-9]$/.test(e.key)) {
+            const index = parseInt(e.key) - 1;
+            const buttons = this.scrambledWord.querySelectorAll('.letter-btn:not(:disabled)');
+            if (index < buttons.length) {
+                e.preventDefault();
+                this.selectLetter(buttons[index]);
+            }
+            return;
+        }
+
+        // Letter keys to select matching letter (during gameplay)
+        if (this.gameActive && /^[a-zA-Z]$/.test(e.key)) {
+            const letter = e.key.toLowerCase();
+            const buttons = this.scrambledWord.querySelectorAll('.letter-btn:not(:disabled)');
+            for (const btn of buttons) {
+                if (btn.dataset.letter === letter) {
+                    e.preventDefault();
+                    this.selectLetter(btn);
+                    return;
+                }
+            }
+            return;
+        }
     }
 
     selectDifficulty() {

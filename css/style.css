@@ -1492,3 +1492,30 @@ select:focus-visible {
 .theme-toggle:active {
     transform: scale(0.95);
 }
+
+/* Keyboard shortcut hints */
+.keyboard-hints {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 14px;
+    padding: 8px 16px;
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+@media (min-width: 768px) {
+    .keyboard-hints { display: flex; }
+}
+.kbd-hint { white-space: nowrap; }
+.kbd-hint kbd {
+    display: inline-block;
+    padding: 1px 5px;
+    border: 1px solid rgba(224, 86, 253, 0.25);
+    border-radius: 3px;
+    background: rgba(224, 86, 253, 0.08);
+    font-family: inherit;
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
