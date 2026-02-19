@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "건너뛰기",
     "submit": "제출",
-    "back": "DopaBrain 홈"
+    "back": "DopaBrain 홈",
+    "category": "카테고리"
   },
   "results": {
     "levelComplete": "레벨 완료!",
@@ -94,5 +95,14 @@
     "banner": "광고 영역",
     "interstitial": "광고",
     "closeButton": "닫기"
+  },
+  "kbd": {
+    "selectLetter": "글자 선택",
+    "submit": "제출",
+    "undoLetter": "글자 취소",
+    "clear": "지우기"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

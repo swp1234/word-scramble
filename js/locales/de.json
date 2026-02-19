@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "Überspringen",
     "submit": "Absenden",
-    "back": "DopaBrain Startseite"
+    "back": "DopaBrain Startseite",
+    "category": "Kategorie"
   },
   "results": {
     "levelComplete": "Stufe abgeschlossen!",
@@ -94,5 +95,14 @@
     "banner": "Werbefläche",
     "interstitial": "Werbung",
     "closeButton": "Schließen"
+  },
+  "kbd": {
+    "selectLetter": "Buchstabe wählen",
+    "submit": "Absenden",
+    "undoLetter": "Buchstabe rückgängig",
+    "clear": "Löschen"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

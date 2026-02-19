@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "Lewati",
     "submit": "Kirim",
-    "back": "Beranda DopaBrain"
+    "back": "Beranda DopaBrain",
+    "category": "Kategori"
   },
   "results": {
     "levelComplete": "Level selesai!",
@@ -94,5 +95,14 @@
     "banner": "Ruang iklan",
     "interstitial": "Iklan",
     "closeButton": "Tutup"
+  },
+  "kbd": {
+    "selectLetter": "Pilih huruf",
+    "submit": "Kirim",
+    "undoLetter": "Batalkan huruf",
+    "clear": "Bersihkan"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

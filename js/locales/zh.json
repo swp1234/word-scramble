@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "跳过",
     "submit": "提交",
-    "back": "DopaBrain 主页"
+    "back": "DopaBrain 主页",
+    "category": "类别"
   },
   "results": {
     "levelComplete": "关卡完成！",
@@ -94,5 +95,14 @@
     "banner": "广告区域",
     "interstitial": "广告",
     "closeButton": "关闭"
+  },
+  "kbd": {
+    "selectLetter": "选择字母",
+    "submit": "提交",
+    "undoLetter": "撤销字母",
+    "clear": "清除"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

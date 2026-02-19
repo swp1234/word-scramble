@@ -210,7 +210,7 @@
                 </div>
 
                 <div class="word-info">
-                    <div class="category-badge" id="category-badge">Category</div>
+                    <div class="category-badge" id="category-badge" data-i18n="game.category">Category</div>
                     <div class="timer-circle" id="timer-circle">
                         <svg viewBox="0 0 100 100">
                             <circle cx="50" cy="50" r="45" class="timer-bg"></circle>
@@ -244,10 +244,10 @@
                 </div>
 
                 <div class="keyboard-hints" aria-label="Keyboard shortcuts">
-                    <span class="kbd-hint"><kbd>A-Z</kbd> Select letter</span>
-                    <span class="kbd-hint"><kbd>Enter</kbd> Submit</span>
-                    <span class="kbd-hint"><kbd>Backspace</kbd> Undo letter</span>
-                    <span class="kbd-hint"><kbd>Esc</kbd> Clear</span>
+                    <span class="kbd-hint"><kbd>A-Z</kbd> <span class="hint-desc" data-i18n="kbd.selectLetter">Select letter</span></span>
+                    <span class="kbd-hint"><kbd>Enter</kbd> <span class="hint-desc" data-i18n="kbd.submit">Submit</span></span>
+                    <span class="kbd-hint"><kbd>Backspace</kbd> <span class="hint-desc" data-i18n="kbd.undoLetter">Undo letter</span></span>
+                    <span class="kbd-hint"><kbd>Esc</kbd> <span class="hint-desc" data-i18n="kbd.clear">Clear</span></span>
                 </div>
             </div>
 
@@ -288,7 +288,7 @@
                     <!-- 공유 버튼 -->
                     <div class="share-section">
                         <button class="btn btn-secondary" id="share-btn" onclick="shareApp()" data-i18n="results.shareButton">📤 결과 공유하기</button>
-                        <button class="btn btn-secondary" onclick="shareTwitter()">𝕏 Twitter</button>
+                        <button class="btn btn-secondary" onclick="shareTwitter()">𝕏 <span data-i18n="share.twitter">Twitter</span></button>
                     </div>
 
                     <button class="btn btn-primary" id="continue-btn" data-i18n="results.continueButton">계속 플레이</button>

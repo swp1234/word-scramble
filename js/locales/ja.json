@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "スキップ",
     "submit": "提出",
-    "back": "DopaBrain ホーム"
+    "back": "DopaBrain ホーム",
+    "category": "カテゴリ"
   },
   "results": {
     "levelComplete": "レベルクリア！",
@@ -94,5 +95,14 @@
     "banner": "広告スペース",
     "interstitial": "広告",
     "closeButton": "閉じる"
+  },
+  "kbd": {
+    "selectLetter": "文字選択",
+    "submit": "送信",
+    "undoLetter": "文字を戻す",
+    "clear": "クリア"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

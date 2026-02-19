@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "Atla",
     "submit": "Gönder",
-    "back": "DopaBrain Anasayfa"
+    "back": "DopaBrain Anasayfa",
+    "category": "Kategori"
   },
   "results": {
     "levelComplete": "Seviye tamamlandı!",
@@ -94,5 +95,14 @@
     "banner": "Reklam alanı",
     "interstitial": "Reklam",
     "closeButton": "Kapat"
+  },
+  "kbd": {
+    "selectLetter": "Harf seç",
+    "submit": "Gönder",
+    "undoLetter": "Harfi geri al",
+    "clear": "Temizle"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }

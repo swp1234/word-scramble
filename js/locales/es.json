@@ -35,7 +35,8 @@
     "clear": "🔄",
     "skip": "Saltar",
     "submit": "Enviar",
-    "back": "Inicio de DopaBrain"
+    "back": "Inicio de DopaBrain",
+    "category": "Categoría"
   },
   "results": {
     "levelComplete": "¡Nivel completado!",
@@ -94,5 +95,14 @@
     "banner": "Espacio publicitario",
     "interstitial": "Publicidad",
     "closeButton": "Cerrar"
+  },
+  "kbd": {
+    "selectLetter": "Seleccionar letra",
+    "submit": "Enviar",
+    "undoLetter": "Deshacer letra",
+    "clear": "Limpiar"
+  },
+  "share": {
+    "twitter": "Twitter"
   }
 }
