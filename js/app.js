@@ -293,6 +293,7 @@ class WordScrambleGame {
     }
 
     correctAnswer() {
+        if (typeof Haptic !== 'undefined') Haptic.light();
         const timeBonus = Math.max(this.timeLeft, 0);
         const lengthBonus = this.currentWord.word.length;
         const comboBonus = Math.max(1, 1 + this.combo * 0.1);
@@ -319,6 +320,7 @@ class WordScrambleGame {
     }
 
     wrongAnswer() {
+        if (typeof Haptic !== 'undefined') Haptic.medium();
         this.lives--;
         this.combo = 0;
 
@@ -445,6 +447,7 @@ class WordScrambleGame {
     }
 
     gameOver() {
+        if (typeof Haptic !== 'undefined') Haptic.heavy();
         this.gameActive = false;
         this.clearTimer();
         this.gameScreen.classList.add('hidden');
