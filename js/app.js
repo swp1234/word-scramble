@@ -434,6 +434,19 @@ class WordScrambleGame {
             this.finalScore.textContent = this.score;
             this.correctCount.textContent = this.wordsCorrect;
             this.bestComboDisplay.textContent = this.bestCombo;
+
+            // Inject rewarded ad button for 2x score
+            if (typeof GameAds !== 'undefined') {
+                const savedScore = this.score;
+                GameAds.injectRewardButton({
+                    container: '#result-screen',
+                    label: '📺 Watch Ad for 2x Score',
+                    onReward: () => {
+                        this.score = savedScore * 2;
+                        this.finalScore.textContent = this.score;
+                    }
+                });
+            }
         };
 
         // Save best score
@@ -473,6 +486,23 @@ class WordScrambleGame {
             this.gameoverScore.textContent = this.score;
             this.gameoverCorrect.textContent = this.wordsCorrect;
             this.gameoverCombo.textContent = this.bestCombo;
+
+            // Inject rewarded ad button for extra life
+            if (typeof GameAds !== 'undefined') {
+                GameAds.injectRewardButton({
+                    container: '#gameover-screen',
+                    label: '📺 Watch Ad for Extra Life',
+                    onReward: () => {
+                        this.lives = 1;
+                        this.gameoverScreen.classList.add('hidden');
+                        this.gameScreen.classList.remove('hidden');
+                        this.gameScreen.classList.add('active');
+                        this.gameActive = true;
+                        this.nextWord();
+                        this.updateUI();
+                    }
+                });
+            }
         };
 
         // Save best score
@@ -504,6 +534,7 @@ class WordScrambleGame {
         this.lives = 3;
         this.wordIndex = 0;
         this.wordsCorrect = 0;
+        if (typeof GameAds !== 'undefined') GameAds.removeRewardButton('#result-screen');
         this.resultScreen.classList.add('hidden');
         this.gameScreen.classList.remove('hidden');
         this.gameScreen.classList.add('active');
@@ -522,6 +553,7 @@ class WordScrambleGame {
         this.wordIndex = 0;
         this.wordsCorrect = 0;
         this.clearGameState();
+        if (typeof GameAds !== 'undefined') GameAds.removeRewardButton('#gameover-screen');
         this.gameoverScreen.classList.add('hidden');
         this.introScreen.classList.remove('hidden');
         this.introScreen.classList.add('active');
