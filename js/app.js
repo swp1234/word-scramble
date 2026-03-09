@@ -427,6 +427,13 @@ class WordScrambleGame {
         this.correctCount.textContent = this.wordsCorrect;
         this.bestComboDisplay.textContent = this.bestCombo;
 
+        // Save best score
+        const prev = parseInt(localStorage.getItem('word-scramble-bestScore')) || 0;
+        if (this.score > prev) localStorage.setItem('word-scramble-bestScore', this.score);
+
+        // Daily streak
+        if (typeof DailyStreak !== 'undefined') DailyStreak.report(this.score);
+
         // GA4 tracking
         if (window.gtag) {
             gtag('event', 'level_complete', {
@@ -447,6 +454,13 @@ class WordScrambleGame {
         this.gameoverScore.textContent = this.score;
         this.gameoverCorrect.textContent = this.wordsCorrect;
         this.gameoverCombo.textContent = this.bestCombo;
+
+        // Save best score
+        const prev = parseInt(localStorage.getItem('word-scramble-bestScore')) || 0;
+        if (this.score > prev) localStorage.setItem('word-scramble-bestScore', this.score);
+
+        // Daily streak
+        if (typeof DailyStreak !== 'undefined') DailyStreak.report(this.score);
 
         // GA4 tracking
         if (window.gtag) {
@@ -623,6 +637,9 @@ async function initApp() {
     // Initialize game
     game = new WordScrambleGame();
     game.updateUI();
+
+    // Daily streak retention
+    if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'word-scramble', bestScoreKey: 'word-scramble-bestScore', minTarget: 50 });
 
     // Register service worker for PWA
     if ('serviceWorker' in navigator) {
