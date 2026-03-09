@@ -308,6 +308,7 @@ class WordScrambleGame {
         if (this.combo >= 3) this.showComboFloat(this.combo);
         if (this.combo >= 5) this.spawnParticles();
         this.clearTimer();
+        this.saveGameState();
         setTimeout(() => this.nextWord(), 1000);
 
         // GA4 tracking
@@ -327,6 +328,7 @@ class WordScrambleGame {
         this.showFeedback(false);
         this.shakeElement(this.scrambledWord);
         this.clearTimer();
+        this.saveGameState();
 
         if (this.lives <= 0) {
             this.gameOver();
@@ -345,6 +347,7 @@ class WordScrambleGame {
     skipWord() {
         this.combo = 0;
         this.clearTimer();
+        this.saveGameState();
         setTimeout(() => this.nextWord(), 500);
     }
 
@@ -421,6 +424,7 @@ class WordScrambleGame {
     endLevel() {
         this.gameActive = false;
         this.clearTimer();
+        this.clearGameState();
         this.gameScreen.classList.add('hidden');
         this.resultScreen.classList.remove('hidden');
         this.resultScreen.classList.add('active');
@@ -450,6 +454,7 @@ class WordScrambleGame {
         if (typeof Haptic !== 'undefined') Haptic.heavy();
         this.gameActive = false;
         this.clearTimer();
+        this.clearGameState();
         this.gameScreen.classList.add('hidden');
         this.gameoverScreen.classList.remove('hidden');
         this.gameoverScreen.classList.add('active');
@@ -485,6 +490,7 @@ class WordScrambleGame {
         this.gameScreen.classList.remove('hidden');
         this.gameScreen.classList.add('active');
         this.gameActive = true;
+        this.saveGameState();
         this.nextWord();
     }
 
@@ -497,6 +503,7 @@ class WordScrambleGame {
         this.lives = 3;
         this.wordIndex = 0;
         this.wordsCorrect = 0;
+        this.clearGameState();
         this.gameoverScreen.classList.add('hidden');
         this.introScreen.classList.remove('hidden');
         this.introScreen.classList.add('active');
@@ -564,6 +571,68 @@ class WordScrambleGame {
 
     closePremiumModal() {
         this.premiumModal.classList.add('hidden');
+    }
+
+    // --- Session persistence ---
+
+    saveGameState() {
+        const state = {
+            difficulty: this.difficulty,
+            score: this.score,
+            level: this.level,
+            combo: this.combo,
+            bestCombo: this.bestCombo,
+            lives: this.lives,
+            wordIndex: this.wordIndex,
+            wordsCorrect: this.wordsCorrect,
+            timestamp: Date.now()
+        };
+        try {
+            localStorage.setItem('wordScramble_gameState', JSON.stringify(state));
+        } catch (e) {
+            // Storage full or unavailable — ignore
+        }
+    }
+
+    loadGameState() {
+        try {
+            const raw = localStorage.getItem('wordScramble_gameState');
+            if (!raw) return false;
+            const state = JSON.parse(raw);
+            // Expire saved states older than 24 hours
+            if (Date.now() - state.timestamp > 24 * 60 * 60 * 1000) {
+                this.clearGameState();
+                return false;
+            }
+            this.difficulty = state.difficulty || 'mixed';
+            this.score = state.score || 0;
+            this.level = state.level || 1;
+            this.combo = state.combo || 0;
+            this.bestCombo = state.bestCombo || 0;
+            this.lives = state.lives || 3;
+            this.wordIndex = state.wordIndex || 0;
+            this.wordsCorrect = state.wordsCorrect || 0;
+            return true;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    clearGameState() {
+        try {
+            localStorage.removeItem('wordScramble_gameState');
+        } catch (e) {
+            // ignore
+        }
+    }
+
+    resumeGame() {
+        this.introScreen.classList.add('hidden');
+        this.gameScreen.classList.remove('hidden');
+        this.gameScreen.classList.add('active');
+        this.gameActive = true;
+        this.nextWord();
+        this.updateUI();
     }
 
     shakeElement(el) {
@@ -639,7 +708,12 @@ async function initApp() {
 
     // Initialize game
     game = new WordScrambleGame();
-    game.updateUI();
+    // Resume saved session if available
+    if (game.loadGameState()) {
+        game.resumeGame();
+    } else {
+        game.updateUI();
+    }
 
     // Daily streak retention
     if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'word-scramble', bestScoreKey: 'word-scramble-bestScore', minTarget: 50 });
