@@ -304,6 +304,8 @@ class WordScrambleGame {
         this.bestCombo = Math.max(this.bestCombo, this.combo);
 
         this.showFeedback(true, points);
+        if (this.combo >= 3) this.showComboFloat(this.combo);
+        if (this.combo >= 5) this.spawnParticles();
         this.clearTimer();
         setTimeout(() => this.nextWord(), 1000);
 
@@ -321,6 +323,7 @@ class WordScrambleGame {
         this.combo = 0;
 
         this.showFeedback(false);
+        this.shakeElement(this.scrambledWord);
         this.clearTimer();
 
         if (this.lives <= 0) {
@@ -546,6 +549,39 @@ class WordScrambleGame {
         this.premiumModal.classList.add('hidden');
     }
 
+    shakeElement(el) {
+        el.style.animation = 'ws-shake 0.4s ease';
+        setTimeout(() => { el.style.animation = ''; }, 450);
+    }
+
+    showComboFloat(combo) {
+        const el = document.createElement('div');
+        el.textContent = `${combo}x COMBO!`;
+        el.style.cssText = 'position:fixed;top:35%;left:50%;transform:translateX(-50%);font-size:26px;font-weight:bold;color:#e056fd;z-index:9999;pointer-events:none;text-shadow:0 0 10px rgba(224,86,253,0.5);opacity:1;transition:all 1s ease-out;';
+        document.body.appendChild(el);
+        requestAnimationFrame(() => {
+            el.style.top = '25%';
+            el.style.opacity = '0';
+        });
+        setTimeout(() => el.remove(), 1200);
+    }
+
+    spawnParticles() {
+        const colors = ['#e056fd', '#f78dff', '#10b981', '#f59e0b', '#3b82f6'];
+        for (let i = 0; i < 20; i++) {
+            const p = document.createElement('div');
+            p.style.cssText = `position:fixed;width:7px;height:7px;border-radius:${Math.random()>.5?'50%':'2px'};pointer-events:none;z-index:9999;background:${colors[i%colors.length]};left:50%;top:40%;opacity:1;transition:all 0.8s ease-out;`;
+            document.body.appendChild(p);
+            const tx = (Math.random() - 0.5) * 200;
+            const ty = -60 - Math.random() * 120;
+            requestAnimationFrame(() => {
+                p.style.transform = `translate(${tx}px, ${ty}px) rotate(${Math.random()*360}deg)`;
+                p.style.opacity = '0';
+            });
+            setTimeout(() => p.remove(), 1000);
+        }
+    }
+
     updateUI() {
         this.levelDisplay.textContent = this.level;
         this.scoreDisplay.textContent = this.score;
@@ -558,6 +594,9 @@ class WordScrambleGame {
         this.lifeDisplay.innerHTML = `<span>${hearts}</span>`;
     }
 }
+
+// Shake animation CSS
+(function(){const s=document.createElement('style');s.textContent='@keyframes ws-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}';document.head.appendChild(s);})();
 
 // Initialize app
 let game;
