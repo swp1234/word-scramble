@@ -425,13 +425,16 @@ class WordScrambleGame {
         this.gameActive = false;
         this.clearTimer();
         this.clearGameState();
-        this.gameScreen.classList.add('hidden');
-        this.resultScreen.classList.remove('hidden');
-        this.resultScreen.classList.add('active');
 
-        this.finalScore.textContent = this.score;
-        this.correctCount.textContent = this.wordsCorrect;
-        this.bestComboDisplay.textContent = this.bestCombo;
+        const showLevelResult = () => {
+            this.gameScreen.classList.add('hidden');
+            this.resultScreen.classList.remove('hidden');
+            this.resultScreen.classList.add('active');
+
+            this.finalScore.textContent = this.score;
+            this.correctCount.textContent = this.wordsCorrect;
+            this.bestComboDisplay.textContent = this.bestCombo;
+        };
 
         // Save best score
         const prev = parseInt(localStorage.getItem('word-scramble-bestScore')) || 0;
@@ -448,6 +451,12 @@ class WordScrambleGame {
                 'correct': this.wordsCorrect
             });
         }
+
+        if (typeof GameAds !== 'undefined') {
+            GameAds.showInterstitial({ onComplete: showLevelResult });
+        } else {
+            showLevelResult();
+        }
     }
 
     gameOver() {
@@ -455,13 +464,16 @@ class WordScrambleGame {
         this.gameActive = false;
         this.clearTimer();
         this.clearGameState();
-        this.gameScreen.classList.add('hidden');
-        this.gameoverScreen.classList.remove('hidden');
-        this.gameoverScreen.classList.add('active');
 
-        this.gameoverScore.textContent = this.score;
-        this.gameoverCorrect.textContent = this.wordsCorrect;
-        this.gameoverCombo.textContent = this.bestCombo;
+        const showGameOverResult = () => {
+            this.gameScreen.classList.add('hidden');
+            this.gameoverScreen.classList.remove('hidden');
+            this.gameoverScreen.classList.add('active');
+
+            this.gameoverScore.textContent = this.score;
+            this.gameoverCorrect.textContent = this.wordsCorrect;
+            this.gameoverCombo.textContent = this.bestCombo;
+        };
 
         // Save best score
         const prev = parseInt(localStorage.getItem('word-scramble-bestScore')) || 0;
@@ -477,6 +489,12 @@ class WordScrambleGame {
                 'score': this.score,
                 'correct': this.wordsCorrect
             });
+        }
+
+        if (typeof GameAds !== 'undefined') {
+            GameAds.showInterstitial({ onComplete: showGameOverResult });
+        } else {
+            showGameOverResult();
         }
     }
 
@@ -714,6 +732,9 @@ async function initApp() {
     } else {
         game.updateUI();
     }
+
+    // Initialize game ads
+    if (typeof GameAds !== 'undefined') GameAds.init();
 
     // Daily streak retention
     if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'word-scramble', bestScoreKey: 'word-scramble-bestScore', minTarget: 50 });
