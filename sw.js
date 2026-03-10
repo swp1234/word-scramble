@@ -1,4 +1,4 @@
-const CACHE_NAME = 'word-scramble-v3';
+const CACHE_NAME = 'word-scramble-v4';
 const urlsToCache = [
     '/assets/bg-opt.jpg',
     '/',
