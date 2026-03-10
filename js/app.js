@@ -261,6 +261,7 @@ class WordScrambleGame {
     }
 
     selectLetter(btn) {
+        if (window.sfx) window.sfx.play('select');
         btn.disabled = true;
         this.selectedLetters.push({
             letter: btn.dataset.letter,
@@ -287,6 +288,7 @@ class WordScrambleGame {
     }
 
     removeLetter(index) {
+        if (window.sfx) window.sfx.play('deselect');
         const item = this.selectedLetters[index];
         item.button.disabled = false;
         this.selectedLetters.splice(index, 1);
@@ -312,6 +314,7 @@ class WordScrambleGame {
     }
 
     correctAnswer() {
+        if (window.sfx) window.sfx.play('correct');
         if (typeof Haptic !== 'undefined') Haptic.light();
         const timeBonus = Math.max(this.timeLeft, 0);
         const lengthBonus = this.currentWord.word.length;
@@ -324,7 +327,10 @@ class WordScrambleGame {
         this.bestCombo = Math.max(this.bestCombo, this.combo);
 
         this.showFeedback(true, points);
-        if (this.combo >= 3) this.showComboFloat(this.combo);
+        if (this.combo >= 3) {
+            this.showComboFloat(this.combo);
+            if (window.sfx) window.sfx.play('combo');
+        }
         if (this.combo >= 5) this.spawnParticles();
         this.clearTimer();
         this.saveGameState();
@@ -340,6 +346,7 @@ class WordScrambleGame {
     }
 
     wrongAnswer() {
+        if (window.sfx) window.sfx.play('wrong');
         if (typeof Haptic !== 'undefined') Haptic.medium();
         this.lives--;
         this.combo = 0;
@@ -364,6 +371,7 @@ class WordScrambleGame {
     }
 
     skipWord() {
+        if (window.sfx) window.sfx.play('skip');
         this.combo = 0;
         this.clearTimer();
         this.saveGameState();
@@ -372,6 +380,7 @@ class WordScrambleGame {
 
     showHintFirstLetter() {
         if (this.usedHints.firstLetter) return;
+        if (window.sfx) window.sfx.play('hint');
         this.usedHints.firstLetter = true;
         this.hintFirstLetterBtn.disabled = true;
         alert(`First letter: ${this.currentWord.word[0].toUpperCase()}`);
@@ -468,11 +477,14 @@ class WordScrambleGame {
             }
         };
 
+        if (window.sfx) window.sfx.play('levelup');
+
         // Save best score
         const prev = parseInt(localStorage.getItem('word-scramble-bestScore')) || 0;
         if (this.score > prev) {
             localStorage.setItem('word-scramble-bestScore', this.score);
             this.showNewBest();
+            if (window.sfx) window.sfx.play('newbest');
         }
 
         // Daily streak
@@ -495,6 +507,7 @@ class WordScrambleGame {
     }
 
     gameOver() {
+        if (window.sfx) window.sfx.play('gameover');
         if (typeof Haptic !== 'undefined') Haptic.heavy();
         this.gameActive = false;
         this.clearTimer();

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'word-scramble-v2';
+const CACHE_NAME = 'word-scramble-v3';
 const urlsToCache = [
     '/assets/bg-opt.jpg',
     '/',
@@ -6,6 +6,7 @@ const urlsToCache = [
     '/manifest.json',
     '/css/style.css',
     '/js/app.js',
+    '/js/sound-engine.js',
     '/js/i18n.js',
     '/js/word-data.js',
     '/icon-192.svg',
