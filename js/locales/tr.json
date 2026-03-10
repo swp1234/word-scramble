@@ -36,7 +36,8 @@
     "skip": "Atla",
     "submit": "Gönder",
     "back": "DopaBrain Anasayfa",
-    "category": "Kategori"
+    "category": "Kategori",
+    "shareScore": "Puanı Paylaş"
   },
   "results": {
     "levelComplete": "Seviye tamamlandı!",

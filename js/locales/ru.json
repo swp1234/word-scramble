@@ -36,7 +36,8 @@
     "skip": "Пропустить",
     "submit": "Отправить",
     "back": "Главная DopaBrain",
-    "category": "Категория"
+    "category": "Категория",
+    "shareScore": "Поделиться"
   },
   "results": {
     "levelComplete": "Уровень пройден!",

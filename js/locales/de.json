@@ -36,7 +36,8 @@
     "skip": "Überspringen",
     "submit": "Absenden",
     "back": "DopaBrain Startseite",
-    "category": "Kategorie"
+    "category": "Kategorie",
+    "shareScore": "Teilen"
   },
   "results": {
     "levelComplete": "Stufe abgeschlossen!",

@@ -36,7 +36,8 @@
     "skip": "スキップ",
     "submit": "提出",
     "back": "DopaBrain ホーム",
-    "category": "カテゴリ"
+    "category": "カテゴリ",
+    "shareScore": "スコア共有"
   },
   "results": {
     "levelComplete": "レベルクリア！",

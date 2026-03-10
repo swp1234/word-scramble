@@ -36,7 +36,8 @@
     "skip": "Skip",
     "submit": "Submit",
     "back": "DopaBrain Home",
-    "category": "Category"
+    "category": "Category",
+    "shareScore": "Share Score"
   },
   "results": {
     "levelComplete": "Level Complete!",

@@ -36,7 +36,8 @@
     "skip": "छोड़ें",
     "submit": "जमा करें",
     "back": "DopaBrain होम",
-    "category": "श्रेणी"
+    "category": "श्रेणी",
+    "shareScore": "स्कोर शेयर"
   },
   "results": {
     "levelComplete": "स्तर पूर्ण!",

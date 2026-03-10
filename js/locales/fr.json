@@ -36,7 +36,8 @@
     "skip": "Passer",
     "submit": "Envoyer",
     "back": "Accueil DopaBrain",
-    "category": "Catégorie"
+    "category": "Catégorie",
+    "shareScore": "Partager"
   },
   "results": {
     "levelComplete": "Niveau terminé!",

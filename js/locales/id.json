@@ -36,7 +36,8 @@
     "skip": "Lewati",
     "submit": "Kirim",
     "back": "Beranda DopaBrain",
-    "category": "Kategori"
+    "category": "Kategori",
+    "shareScore": "Bagikan Skor"
   },
   "results": {
     "levelComplete": "Level selesai!",

@@ -102,6 +102,25 @@ class WordScrambleGame {
         this.homeBtn.addEventListener('click', () => this.goHome());
         this.homeBtn2.addEventListener('click', () => this.goHome());
 
+        // Share score button
+        const shareScoreBtn = document.getElementById('share-score-btn');
+        if (shareScoreBtn) {
+            shareScoreBtn.addEventListener('click', () => {
+                const text = `I unscrambled ${this.wordsCorrect} words in Word Scramble! Can you beat me? \uD83D\uDCDD`;
+                const url = 'https://dopabrain.com/word-scramble/';
+                if (navigator.share) {
+                    navigator.share({ title: 'Word Scramble', text, url }).catch(() => {});
+                } else {
+                    navigator.clipboard.writeText(text + '\n' + url).then(() => {
+                        const orig = shareScoreBtn.textContent;
+                        shareScoreBtn.textContent = 'Copied!';
+                        setTimeout(() => shareScoreBtn.textContent = orig, 1500);
+                    }).catch(() => {});
+                }
+                if (typeof gtag === 'function') gtag('event', 'share', { method: navigator.share ? 'native' : 'clipboard', app_name: 'word-scramble' });
+            });
+        }
+
         // Premium
         this.premiumAnalysisBtn.addEventListener('click', () => this.showPremiumAnalysis());
         this.premiumClose.addEventListener('click', () => this.closePremiumModal());

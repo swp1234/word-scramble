@@ -36,7 +36,8 @@
     "skip": "跳过",
     "submit": "提交",
     "back": "DopaBrain 主页",
-    "category": "类别"
+    "category": "类别",
+    "shareScore": "分享分数"
   },
   "results": {
     "levelComplete": "关卡完成！",

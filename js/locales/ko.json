@@ -36,7 +36,8 @@
     "skip": "건너뛰기",
     "submit": "제출",
     "back": "DopaBrain 홈",
-    "category": "카테고리"
+    "category": "카테고리",
+    "shareScore": "점수 공유"
   },
   "results": {
     "levelComplete": "레벨 완료!",
