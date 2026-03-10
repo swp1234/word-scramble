@@ -488,8 +488,19 @@ class WordScrambleGame {
             if (window.sfx) window.sfx.play('newbest');
         }
 
+        // Increment total games
+        const totalGames = (parseInt(localStorage.getItem('word-scramble-totalGames')) || 0) + 1;
+        localStorage.setItem('word-scramble-totalGames', totalGames);
+
         // Daily streak
         if (typeof DailyStreak !== 'undefined') DailyStreak.report(this.score);
+
+        // GameAchievements report
+        if (typeof GameAchievements !== 'undefined') GameAchievements.report({
+            bestScore: parseInt(localStorage.getItem('word-scramble-bestScore')) || this.score,
+            totalGames: totalGames,
+            bestStreak: this.bestCombo
+        });
 
         // GA4 tracking
         if (window.gtag) {
@@ -548,8 +559,19 @@ class WordScrambleGame {
             this.showNewBest();
         }
 
+        // Increment total games
+        const totalGames = (parseInt(localStorage.getItem('word-scramble-totalGames')) || 0) + 1;
+        localStorage.setItem('word-scramble-totalGames', totalGames);
+
         // Daily streak
         if (typeof DailyStreak !== 'undefined') DailyStreak.report(this.score);
+
+        // GameAchievements report
+        if (typeof GameAchievements !== 'undefined') GameAchievements.report({
+            bestScore: parseInt(localStorage.getItem('word-scramble-bestScore')) || this.score,
+            totalGames: totalGames,
+            bestStreak: this.bestCombo
+        });
 
         // GA4 tracking
         if (window.gtag) {
@@ -843,6 +865,19 @@ async function initApp() {
 
     // Daily streak retention
     if (typeof DailyStreak !== 'undefined') DailyStreak.init({ gameId: 'word-scramble', bestScoreKey: 'word-scramble-bestScore', minTarget: 50 });
+
+    // GameAchievements initialization
+    if (typeof GameAchievements !== 'undefined') GameAchievements.init({
+        gameId: 'word-scramble',
+        defs: [
+            { id: 'score_500', stat: 'bestScore', target: 500, icon: '⭐', name: 'Word Finder' },
+            { id: 'score_2000', stat: 'bestScore', target: 2000, icon: '🏆', name: 'Word Master' },
+            { id: 'score_5000', stat: 'bestScore', target: 5000, icon: '👑', name: 'Word Legend' },
+            { id: 'games_10', stat: 'totalGames', target: 10, icon: '🎮', name: 'Regular Player' },
+            { id: 'streak_5', stat: 'bestStreak', target: 5, icon: '🔥', name: 'Hot Streak' },
+            { id: 'streak_10', stat: 'bestStreak', target: 10, icon: '💥', name: 'Unstoppable' }
+        ]
+    });
 
     // Register service worker for PWA
     if ('serviceWorker' in navigator) {
