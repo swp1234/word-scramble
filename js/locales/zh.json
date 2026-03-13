@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "更多探索",
+    "wordGuess": "猜单词",
+    "typingSpeed": "打字速度",
+    "quizApp": "问答应用",
+    "devQuiz": "开发者问答"
   }
 }

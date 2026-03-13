@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "More to Explore",
+    "wordGuess": "Word Guess",
+    "typingSpeed": "Typing Speed",
+    "quizApp": "Quiz App",
+    "devQuiz": "Dev Quiz"
   }
 }

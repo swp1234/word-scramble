@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Ещё игры",
+    "wordGuess": "Угадай Слово",
+    "typingSpeed": "Скорость печати",
+    "quizApp": "Квиз",
+    "devQuiz": "Квиз для разработчиков"
   }
 }

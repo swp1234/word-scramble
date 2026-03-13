@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Más juegos",
+    "wordGuess": "Adivina Palabra",
+    "typingSpeed": "Velocidad de Escritura",
+    "quizApp": "App de Quiz",
+    "devQuiz": "Quiz de Desarrollo"
   }
 }

@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Mais jogos",
+    "wordGuess": "Adivinhe a Palavra",
+    "typingSpeed": "Velocidade de Digitação",
+    "quizApp": "App de Quiz",
+    "devQuiz": "Quiz de Desenvolvimento"
   }
 }

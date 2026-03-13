@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "À découvrir",
+    "wordGuess": "Deviner le Mot",
+    "typingSpeed": "Vitesse de Frappe",
+    "quizApp": "App Quiz",
+    "devQuiz": "Quiz Développeur"
   }
 }

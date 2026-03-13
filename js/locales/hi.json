@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "और खेलें",
+    "wordGuess": "वर्ड गेस",
+    "typingSpeed": "टाइपिंग स्पीड",
+    "quizApp": "क्विज़ ऐप",
+    "devQuiz": "डेव क्विज़"
   }
 }

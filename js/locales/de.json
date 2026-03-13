@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Mehr entdecken",
+    "wordGuess": "Wort Raten",
+    "typingSpeed": "Tippgeschwindigkeit",
+    "quizApp": "Quiz-App",
+    "devQuiz": "Entwickler-Quiz"
   }
 }

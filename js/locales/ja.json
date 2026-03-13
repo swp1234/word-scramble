@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "もっと探索",
+    "wordGuess": "ワードゲス",
+    "typingSpeed": "タイピング速度",
+    "quizApp": "クイズアプリ",
+    "devQuiz": "開発者クイズ"
   }
 }

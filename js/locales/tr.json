@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Daha fazla keşfet",
+    "wordGuess": "Kelime Tahmin",
+    "typingSpeed": "Yazma Hızı",
+    "quizApp": "Quiz Uygulaması",
+    "devQuiz": "Geliştirici Quiz"
   }
 }

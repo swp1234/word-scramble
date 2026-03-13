@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "Jelajahi lainnya",
+    "wordGuess": "Tebak Kata",
+    "typingSpeed": "Kecepatan Mengetik",
+    "quizApp": "Aplikasi Kuis",
+    "devQuiz": "Kuis Developer"
   }
 }

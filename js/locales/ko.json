@@ -105,5 +105,12 @@
   },
   "share": {
     "twitter": "Twitter"
+  },
+  "related": {
+    "title": "더 많은 게임",
+    "wordGuess": "단어 맞추기",
+    "typingSpeed": "타자 속도",
+    "quizApp": "퀴즈 앱",
+    "devQuiz": "개발자 퀴즈"
   }
 }
