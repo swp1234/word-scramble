@@ -321,6 +321,14 @@ class WordScrambleGame {
         const comboBonus = Math.max(1, 1 + this.combo * 0.1);
         const points = Math.floor(timeBonus * lengthBonus * comboBonus);
 
+        // Speed solve bonus — solved with >80% time remaining
+        const speedRatio = this.timeLeft / this.totalTimeLeft;
+        if (speedRatio > 0.8) {
+            const speedBonus = Math.floor(points * 0.3);
+            this.score += speedBonus;
+            this.showSpeedSolve(speedBonus);
+        }
+
         this.score += points;
         this.combo++;
         this.wordsCorrect++;
@@ -478,6 +486,18 @@ class WordScrambleGame {
         };
 
         if (window.sfx) window.sfx.play('levelup');
+
+        // Perfect level badge — all words correct with full lives
+        if (this.wordsCorrect >= this.wordsPerLevel && this.lives >= 3) {
+            const badge = document.createElement('div');
+            badge.textContent = '💯 PERFECT LEVEL!';
+            badge.style.cssText = 'position:fixed;top:25%;left:50%;transform:translate(-50%,-50%) scale(0);font-size:30px;font-weight:900;color:#10b981;text-shadow:0 0 20px rgba(16,185,129,0.6);pointer-events:none;z-index:9999;transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1),opacity 0.5s;opacity:0;';
+            document.body.appendChild(badge);
+            requestAnimationFrame(() => { badge.style.transform = 'translate(-50%,-50%) scale(1.2)'; badge.style.opacity = '1'; });
+            setTimeout(() => { badge.style.opacity = '0'; badge.style.transform = 'translate(-50%,-50%) scale(0.8)'; }, 1800);
+            setTimeout(() => badge.remove(), 2500);
+        }
+
         this.spawnConfetti();
 
         // Save best score
@@ -749,6 +769,15 @@ class WordScrambleGame {
     shakeElement(el) {
         el.style.animation = 'ws-shake 0.4s ease';
         setTimeout(() => { el.style.animation = ''; }, 450);
+    }
+
+    showSpeedSolve(bonus) {
+        const el = document.createElement('div');
+        el.textContent = `⚡ SPEED +${bonus}`;
+        el.style.cssText = 'position:fixed;top:42%;left:50%;transform:translateX(-50%);font-size:20px;font-weight:bold;color:#f59e0b;z-index:9999;pointer-events:none;text-shadow:0 0 8px rgba(245,158,11,0.5);opacity:1;transition:all 0.8s ease-out;';
+        document.body.appendChild(el);
+        requestAnimationFrame(() => { el.style.top = '35%'; el.style.opacity = '0'; });
+        setTimeout(() => el.remove(), 1000);
     }
 
     showComboFloat(combo) {
